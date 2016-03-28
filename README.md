@@ -1,4 +1,4 @@
-# Movie-Maniac-Android
+# Project - Stock Hawk
 
 This project is for the submission of Project #3 : Stock Hawk in Android Nano Degree from Udacity.
 

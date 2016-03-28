@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sam_chordas.android.stockhawk">
+
+    <application
+        android:name=".StockHawkApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_stock_hawk"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.sam_chordas.android.stockhawk.ui.MyStocksActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.LineGraphActivity" />
+
+        <service
+            android:name="com.sam_chordas.android.stockhawk.service.StockTaskService"
+            android:exported="true"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.sam_chordas.android.stockhawk.service.StockIntentService" />
+
+        <service android:name=".service.RetrieveStockHistoricalDataService" />
+
+        <service
+            android:name=".service.StockDataCollectionWidgetRemoteViewsService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver
+            android:name=".widgets.StockDataListWidgetProvider"
+            android:label="@string/title_widget_stock_data_list">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.sam_chordas.android.stockhawk.ACTION_DATA_UPDATED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_stock_data_list" />
+        </receiver>
+
+        <provider
+            android:name="com.sam_chordas.android.stockhawk.data.persistent.generated.QuoteProvider"
+            android:authorities="com.sam_chordas.android.stockhawk.data.persistent.QuoteProvider"
+            android:exported="false" />
+    </application>
+
+    <permission
+        android:name="com.google.android.gcm.demo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.gcm.demo.permission.C2D_MESSAGE" />
+
+</manifest>

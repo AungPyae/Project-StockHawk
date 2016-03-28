@@ -1,0 +1,32 @@
+<resources>
+    <!-- Generic with ratio -->
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_medium_2">16dp</dimen>
+    <dimen name="margin_medium_3">18dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_regular">14sp</dimen>
+    <dimen name="text_regular_2x">16sp</dimen>
+    <dimen name="text_regular_3x">20sp</dimen>
+    <dimen name="text_heading_1x">24sp</dimen>
+    <dimen name="text_heading_2x">32sp</dimen>
+    <dimen name="text_big">40sp</dimen>
+    <dimen name="text_big_2x">60sp</dimen>
+    <dimen name="text_big_3x">80sp</dimen>
+
+    <!-- Specific -->
+    <dimen name="pb_dimen">55dp</dimen>
+    <dimen name="date_selection_margin_horizontal">12dp</dimen>
+    <dimen name="update_chart_button_width">200dp</dimen>
+    <dimen name="update_chart_button_margin_left">28dp</dimen>
+    <dimen name="chart_height">160dp</dimen>
+    <dimen name="stock_view_item_height">72dp</dimen>
+    <dimen name="stock_value_container_width">120dp</dimen>
+
+    <dimen name="widget_list_height">110dp</dimen>
+    <dimen name="widget_list_width">180dp</dimen>
+    <dimen name="height_widget_title">56dp</dimen>
+</resources>

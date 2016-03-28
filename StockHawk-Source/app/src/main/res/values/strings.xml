@@ -1,0 +1,44 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">Stock Hawk</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_change_units">Change Units</string>
+    <string name="symbol_search">Symbol Search</string>
+    <string name="content_test">Search for a Stock Symbol</string>
+    <string name="input_hint" translatable="false">FB</string>
+    <string name="input_prefill"></string>
+    <string name="network_toast">Uh-oh! This app requires an internet connection.</string>
+
+    <string name="format_invalid_stock_label">\"<xliff:g id="invalid_stock_label">%1$s</xliff:g>\" doesn\'t exist as public company to show stock information.</string>
+    <string name="stock_already_saved">This stock is already saved!</string>
+    <string name="no_internet_outdated_data">Your device is not connected to the internet. Your stock information may be out-dated.</string>
+    <string name="no_internet_empty_data">Your device is not connected to the internet. Please connect to internet and try again.</string>
+    <string name="format_chart_selection">Stock price from <b><xliff:g id="start_date">%1$s</xliff:g></b> to <b><xliff:g id="start_date">%2$s</xliff:g></b></string>
+
+    <!-- Stock price type to project in Chart -->
+    <string name="price_type_open_bid">Open Bid</string>
+    <string name="price_type_highest_bid">Highest Bid</string>
+    <string name="price_type_lowest_bid">Lowest Bid</string>
+    <string name="price_type_close_bid">Close Bid</string>
+    <string name="price_type_adj_close_bid">Adj_Close Bid</string>
+
+    <string name="get_stock_price">Get Stock Price</string>
+    <string name="lbl_stock_price_over_time">Stock Price Overtime</string>
+    <string name="hint_start_date">Start Date</string>
+    <string name="hint_end_date">End Date</string>
+    <string name="select_price_type_to_project_in_chart">Select Price Type : </string>
+
+    <string name="format_stock_symbol">(<xliff:g id="stock_symbol">%1$s</xliff:g>)</string>
+    <string name="no_stock_information_yet">No Stock Information Available Yet.</string>
+    <string name="stock_data_has_been_refreshed">Stock data has been refreshed.</string>
+    <string name="title_widget_stock_data_list">Stock Hawk : Stock Data List</string>
+
+    <!-- Content Description -->
+    <string name="cd_company_name">Company name</string>
+    <string name="cd_company_symbol">Company Symbol</string>
+    <string name="cd_bid_price">Bid price</string>
+    <string name="cd_change_in_stock_price">Change in stock price</string>
+    <string name="cd_add_new_company_stock_data_into_list">Add stock data of the desire company into watching list</string>
+    <string name="cd_date_range_selection_for_chart">Date range selection for populating data on chart</string>
+    <string name="cd_chart_with_historical_data">Chart with historical data over time.</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_stock_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/stock_view_item_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_medium_2"
+    android:paddingRight="@dimen/margin_medium_2"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/stock_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cd_company_name"
+            android:fontFamily="sans-serif-light"
+            android:textSize="@dimen/text_regular_2x"
+            tools:text="Google" />
+
+        <TextView
+            android:id="@+id/stock_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:contentDescription="@string/cd_company_symbol"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_regular"
+            tools:text="(GOOG)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/stock_value_container_width"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/bid_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cd_bid_price"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:paddingEnd="@dimen/margin_medium"
+            android:textSize="@dimen/text_regular_2x"
+            tools:text="1000.00" />
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/percent_change_pill"
+            android:contentDescription="@string/cd_change_in_stock_price"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small"
+            android:textSize="@dimen/text_regular_2x"
+            tools:text="100%" />
+    </LinearLayout>
+</LinearLayout>
